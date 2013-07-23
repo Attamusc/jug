@@ -1,0 +1,25 @@
+{
+  "name": "jug",
+  "version": "0.1.0",
+  "description": "Gotta have something to swig out of",
+  "scripts": {
+    "test": "karma start --single-run",
+    "tdd": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/Attamusc/jug"
+  },
+  "keywords": [
+    "swig",
+    "requirejs",
+    "plugin"
+  ],
+  "author": "Sean Dunn <sean@attamusc.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.7.2",
+    "mocha": "~1.12.0",
+    "karma": "~0.8.7"
+  }
+}
