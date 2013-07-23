@@ -1,9 +1,13 @@
 define(['chai', 'jug!templates/test'], function(chai, testTmpl) {
-  chai.should();
+  var expect = chai.expect;
 
   describe('jug', function() {
-    it('is truthy', function() {
-      testTmpl({title: 'This is awesome'}).should.equal('<h1>This is awesome</h1>');
+    it('is requireable', function() {
+      expect(testTmpl).to.exist;
+    });
+
+    it('can render simple templates', function() {
+      expect(testTmpl({title: 'This is awesome'})).to.equal('<h1>This is awesome</h1>');
     });
   });
 });
